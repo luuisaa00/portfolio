@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Planos para Peludos</title>
+  <meta name="description" content="Portfolio de estudiante de Edificación: proyectos, rascadores para gatos y cuidado de mascotas a domicilio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barlow:wght@400;500;600&family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Obra en curso</span><span>Portfolio en construcción</span><span>Prohibido el paso a toda persona ajena a la obra</span><span>Gatos y perros: pasen</span><span>Uso obligatorio del casco</span>
+    <span>Obra en curso</span><span>Portfolio en construcción</span><span>Prohibido el paso a toda persona ajena a la obra</span><span>Gatos y perros: pasen</span><span>Uso obligatorio del casco</span>
+  </div>
+</div>
+
+<nav class="nav" aria-label="Fases de obra">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><b>PxP</b><span>planos para peludos</span></a>
+    <ul>
+      <li><a class="link" href="#replanteo"><em>01</em>Replanteo</a></li>
+      <li><a class="link" href="#estructura"><em>02</em>Estructura</a></li>
+      <li><a class="link" href="#rascadores"><em>03</em>Instalaciones felinas</a></li>
+      <li><a class="link" href="#cuidados"><em>04</em>Mantenimiento</a></li>
+      <li><a class="link" href="#contacto"><em>05</em>Recepción</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="hero phase" id="inicio" data-fase="Portada · cubierta">
+    <div>
+      <p class="eyebrow">Plano nº 00 · E 1:1 · portada</p>
+      <h1>Obra <span class="hueca">en curso<span class="dot">.</span></span></h1>
+      <p class="lead">Estudio <strong>Edificación</strong>. Mientras aprendo a levantar edificios, construyo <strong>rascadores y plataformas</strong> para los gatos de una asociación y cuido de <strong>gatos y perros</strong> a domicilio.</p>
+      <div class="actions">
+        <a class="btn primary" href="#rascadores">Ver rascadores</a>
+        <a class="btn" href="#cuidados">Pedir cuidados</a>
+      </div>
+
+      <aside class="cartel" aria-label="Cartel de obra">
+        <header>Cartel de obra</header>
+        <dl>
+          <dt>Obra</dt><dd>Portfolio personal</dd>
+          <dt>Promotora</dt><dd><span class="ph">[Nombre Apellido]</span></dd>
+          <dt>Dir. de ejecución</dt><dd><span class="ph">[Nombre]</span>, estudiante de Edificación</dd>
+          <dt>Centro</dt><dd><span class="ph">[Universidad o escuela]</span></dd>
+          <dt>Plazo</dt><dd>En ejecución · <span class="ph">[curso]</span></dd>
+          <dt>Licencia</dt><dd>Nº 7 vidas</dd>
+        </dl>
+        <footer>Obra autorizada para gatos y perros</footer>
+      </aside>
+    </div>
+
+    <figure class="plan" id="heroPlan">
+      <span class="note">lo que va entre [corchetes] está pendiente de datos reales</span>
+      <div class="plan-frame">
+        <svg viewBox="0 0 460 400" role="img" aria-labelledby="planT planD">
+          <title id="planT">Alzado del rascador tipo A con grúa torre</title>
+          <desc id="planD">Plano acotado de un rascador de tres plataformas. Una grúa torre coloca la plataforma superior y una gata se sube encima.</desc>
+          <defs>
+            <pattern id="gs" width="10" height="10" patternUnits="userSpaceOnUse"><path class="grid-s" d="M10 0H0V10"/></pattern>
+            <pattern id="gm" width="50" height="50" patternUnits="userSpaceOnUse"><path class="grid-m" d="M50 0H0V50"/></pattern>
+            <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path class="arrow" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <rect width="460" height="400" fill="url(#gs)"/>
+          <rect width="460" height="400" fill="url(#gm)"/>
+          <rect class="frame" x="8" y="8" width="444" height="384"/>
+
+          <text class="t-lg" x="22" y="78">LÁMINA 00</text>
+          <text class="t" x="22" y="92">rascador tipo A · alzado</text>
+          <text class="t" x="22" y="104">E 1:20</text>
+
+          <!-- grúa torre -->
+          <g class="crane">
+            <path class="draw" d="M400 50V388M414 50V388"/>
+            <path class="draw crane-thin" id="mastZig" d=""/>
+            <rect class="draw" x="386" y="386" width="42" height="8"/>
+            <path class="draw" d="M60 40H452M60 50H452M60 40V50M452 40V50"/>
+            <path class="draw crane-thin" id="jibZig" d=""/>
+            <path class="draw" d="M400 40L407 12L414 40"/>
+            <path class="draw crane-thin" d="M407 12L150 40M407 12L452 40"/>
+            <rect class="draw" x="436" y="50" width="16" height="16"/>
+            <rect class="draw" x="414" y="52" width="12" height="12"/>
+            <rect class="draw" x="153" y="50" width="16" height="6"/>
+          </g>
+          <line class="cable" id="cable" x1="161" y1="56" x2="161" y2="66"/>
+          <path class="crane" id="hook" d="M161 66v5a3 3 0 1 1-4 3"/>
+
+          <!-- rascador -->
+          <g transform="translate(40 120) scale(1.15)">
+            <g class="ln">
+              <rect class="draw" x="70" y="200" width="120" height="10"/>
+              <rect class="draw" x="95" y="60" width="14" height="140"/>
+              <rect class="draw" x="150" y="110" width="14" height="90"/>
+              <rect class="draw" x="75" y="150" width="60" height="7"/>
+              <rect class="draw" x="130" y="103" width="55" height="7"/>
+              <path class="draw ln-thin" d="M95 70h14M95 80h14M95 90h14M95 100h14M95 110h14M95 120h14M95 130h14M95 140h14M95 160h14M95 170h14M95 180h14M95 190h14M150 120h14M150 130h14M150 140h14M150 150h14M150 160h14M150 170h14M150 180h14M150 190h14"/>
+            </g>
+            <g id="carga">
+              <rect class="ln draw" x="80" y="53" width="50" height="7"/>
+              <path id="rig" class="crane-thin" d="M80 53L105 40L130 53" opacity="0"/>
+            </g>
+            <g id="gato" class="cat">
+              <path class="draw" d="M92 53C92 38 118 38 118 53"/>
+              <path class="draw" d="M96 42L99 32L104 40M108 40L113 32L115 42"/>
+              <path class="draw" d="M118 50C128 48 130 38 126 32"/>
+            </g>
+            <g id="cotas">
+              <line class="cota" x1="220" y1="53" x2="220" y2="210" marker-start="url(#ar)" marker-end="url(#ar)"/>
+              <line class="cota" x1="70" y1="222" x2="190" y2="222" marker-start="url(#ar)" marker-end="url(#ar)"/>
+              <line class="cota" x1="190" y1="53" x2="226" y2="53" stroke-dasharray="2 2"/>
+              <line class="cota" x1="194" y1="210" x2="226" y2="210" stroke-dasharray="2 2"/>
+              <text class="t" x="226" y="135">1,50 m</text>
+              <text class="t" x="112" y="218">0,90 m</text>
+            </g>
+          </g>
+          <g id="nota">
+            <path class="hand-ln" d="M226 146Q200 146 186 160"/>
+            <text class="hand" x="230" y="150">la inquilina</text>
+          </g>
+        </svg>
+      </div>
+      <div class="plan-bar">
+        <figcaption>Medidas orientativas · modelo genérico</figcaption>
+        <div class="plan-ctrl">
+          <button class="btn small" id="cotasBtn" type="button" aria-pressed="true">Cotas: sí</button>
+          <button class="btn small" id="replay" type="button">Repetir montaje</button>
+        </div>
+      </div>
+    </figure>
+  </section>
+
+  <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>+12,00</b> planta 4 · replanteo<i></i></div>
+
+  <section class="phase" id="replanteo" data-fase="01 · Replanteo">
+    <div class="phase-head">
+      <span class="phase-num" aria-hidden="true">01</span>
+      <h2>Replanteo</h2>
+      <p>Sobre mí · dónde empieza la obra</p>
+    </div>
+    <div class="two">
+      <div class="prose">
+        <p>Soy <strong><span class="ph">[Nombre]</span></strong>, estudiante de <span class="ph">[curso]</span> de <strong>Edificación / Arquitectura Técnica</strong> en <span class="ph">[universidad]</span>. Me interesa entender cómo se levanta un edificio de verdad: estructura, materiales, mediciones y ejecución.</p>
+        <p>Fuera de clase aplico lo mismo a escala gato. Como voluntaria en <span class="ph">[asociación]</span> diseño y fabrico <strong>rascadores y plataformas</strong> para que los gatos trepen y jueguen. También cuido de <strong>gatos y perros a domicilio</strong>.</p>
+        <span class="note">texto provisional: que lo reescriba ella con sus palabras</span>
+      </div>
+      <div class="ficha">
+        <h3>Ficha de replanteo</h3>
+        <dl>
+          <div class="row"><dt>Formación</dt><i></i><dd>Edificación · <span class="ph">[curso]</span></dd></div>
+          <div class="row"><dt>Voluntariado</dt><i></i><dd><span class="ph">[asociación felina]</span></dd></div>
+          <div class="row"><dt>En la asociación</dt><i></i><dd>Rascadores y plataformas</dd></div>
+          <div class="row"><dt>Servicios</dt><i></i><dd>Gatos y perros a domicilio</dd></div>
+          <div class="row"><dt>Zona</dt><i></i><dd><span class="ph">[barrio / ciudad]</span></dd></div>
+          <div class="row"><dt>Herramientas</dt><i></i><dd><span class="ph">[AutoCAD, Revit, Presto…]</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>+9,00</b> planta 3 · estructura<i></i></div>
+
+  <section class="phase" id="estructura" data-fase="02 · Estructura">
+    <div class="phase-head">
+      <span class="phase-num" aria-hidden="true">02</span>
+      <h2>Estructura</h2>
+      <p>Proyectos de la carrera · láminas</p>
+    </div>
+    <div class="laminas">
+      <article class="lamina">
+        <div class="lamina-draw"><div class="stamp">Hueco reservado<small>pendiente de entrega</small></div></div>
+        <div class="cajetin-mini"><div class="n">02.1</div><div><b><span class="ph">[Título del trabajo]</span></b><span>p. ej. detalles constructivos</span></div></div>
+      </article>
+      <article class="lamina">
+        <div class="lamina-draw"><div class="stamp">Hueco reservado<small>pendiente de entrega</small></div></div>
+        <div class="cajetin-mini"><div class="n">02.2</div><div><b><span class="ph">[Título del trabajo]</span></b><span>p. ej. mediciones y presupuestos</span></div></div>
+      </article>
+      <article class="lamina">
+        <div class="lamina-draw"><div class="stamp">Hueco reservado<small>pendiente de entrega</small></div></div>
+        <div class="cajetin-mini"><div class="n">02.3</div><div><b><span class="ph">[Título del trabajo]</span></b><span>p. ej. instalaciones</span></div></div>
+      </article>
+    </div>
+    <p style="margin:18px 0 0"><span class="note">aquí van sus láminas reales (planos o capturas, lo que pueda enseñar)</span></p>
+  </section>
+
+  <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>+6,00</b> planta 2 · instalaciones<i></i></div>
+
+  <section class="phase" id="rascadores" data-fase="03 · Instalaciones felinas">
+    <div class="phase-head">
+      <span class="phase-num" aria-hidden="true">03</span>
+      <h2>Instalaciones felinas</h2>
+      <p>Rascadores y plataformas · E 1:20</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Modelos">
+      <button class="tab" role="tab" id="tab-a" aria-controls="m-a" aria-selected="true"><span>A</span>Torre de tres alturas</button>
+      <button class="tab" role="tab" id="tab-b" aria-controls="m-b" aria-selected="false" tabindex="-1"><span>B</span>Plataformas de pared</button>
+      <button class="tab" role="tab" id="tab-c" aria-controls="m-c" aria-selected="false" tabindex="-1"><span>C</span>Refugio</button>
+    </div>
+
+    <div class="modelo" id="m-a" role="tabpanel" aria-labelledby="tab-a">
+      <div class="plan-frame">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de torre de tres alturas">
+          <rect width="320" height="240" fill="url(#gs)"/>
+          <g class="ln">
+            <rect class="draw" x="100" y="215" width="120" height="10"/>
+            <rect class="draw" x="153" y="47" width="14" height="168"/>
+            <rect class="draw" x="98" y="160" width="62" height="7"/>
+            <rect class="draw" x="160" y="110" width="62" height="7"/>
+            <rect class="draw" x="115" y="40" width="90" height="7"/>
+            <path class="draw ln-thin" d="M153 60h14M153 72h14M153 84h14M153 96h14M153 124h14M153 136h14M153 148h14M153 176h14M153 188h14M153 200h14"/>
+          </g>
+          <path class="cat draw" d="M104 160C104 148 124 148 124 160M108 151l2-7 4 6M117 150l4-6 1 7"/>
+          <g>
+            <line class="cota" x1="252" y1="40" x2="252" y2="225" marker-start="url(#ar)" marker-end="url(#ar)"/>
+            <line class="cota" x1="100" y1="234" x2="220" y2="234" marker-start="url(#ar)" marker-end="url(#ar)"/>
+            <text class="t" x="258" y="136">[h]</text>
+            <text class="t" x="154" y="231">[a]</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <span class="chip">Datos de ejemplo</span>
+        <h3>Torre de tres alturas</h3>
+        <p>Poste central forrado de sisal con plataformas a distintas alturas para que varios gatos suban a la vez.</p>
+        <div class="ficha">
+          <h3>Ficha técnica · A</h3>
+          <dl>
+            <div class="row"><dt>Tablero</dt><i></i><dd>DM 18 mm</dd></div>
+            <div class="row"><dt>Revestimiento</dt><i></i><dd>Sisal natural</dd></div>
+            <div class="row"><dt>Carga de uso</dt><i></i><dd>3 gatos</dd></div>
+            <div class="row"><dt>Ubicación</dt><i></i><dd><span class="ph">[sala de la asociación]</span></dd></div>
+          </dl>
+        </div>
+        <div class="foto">Foto de obra pendiente</div>
+      </div>
+    </div>
+
+    <div class="modelo" id="m-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+      <div class="plan-frame">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de plataformas escalonadas en pared">
+          <rect width="320" height="240" fill="url(#gs)"/>
+          <g class="ln">
+            <rect class="draw ln-thin" x="20" y="16" width="280" height="206" stroke-dasharray="4 3"/>
+            <path class="draw" d="M20 222H300"/>
+            <rect class="draw" x="36" y="186" width="62" height="7"/>
+            <rect class="draw" x="92" y="146" width="62" height="7"/>
+            <rect class="draw" x="148" y="106" width="62" height="7"/>
+            <rect class="draw" x="204" y="66" width="62" height="7"/>
+            <path class="draw ln-thin" d="M50 193v14l14-14M106 153v14l14-14M162 113v14l14-14M218 73v14l14-14M80 193v14l-14-14M136 153v14l-14-14M192 113v14l-14-14M248 73v14l-14-14"/>
+          </g>
+          <path class="cat draw" d="M66 180Q110 150 122 140T178 100T236 60" stroke-dasharray="3 4"/>
+          <path class="cat draw" d="M226 66C226 54 246 54 246 66M230 57l2-7 4 6M239 56l4-6 1 7"/>
+          <text class="t" x="28" y="32">paramento existente</text>
+          <text class="t" x="104" y="128">recorrido</text>
+        </svg>
+      </div>
+      <div>
+        <span class="chip">Datos de ejemplo</span>
+        <h3>Plataformas de pared</h3>
+        <p>Escalones anclados a la pared que forman un recorrido en altura sin ocupar suelo.</p>
+        <div class="ficha">
+          <h3>Ficha técnica · B</h3>
+          <dl>
+            <div class="row"><dt>Madera</dt><i></i><dd>Pino macizo</dd></div>
+            <div class="row"><dt>Anclaje</dt><i></i><dd>Escuadras ocultas</dd></div>
+            <div class="row"><dt>Recorrido</dt><i></i><dd>4 m</dd></div>
+            <div class="row"><dt>Ubicación</dt><i></i><dd><span class="ph">[sala de la asociación]</span></dd></div>
+          </dl>
+        </div>
+        <div class="foto">Foto de obra pendiente</div>
+      </div>
+    </div>
+
+    <div class="modelo" id="m-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+      <div class="plan-frame">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de refugio con cubierta a dos aguas">
+          <rect width="320" height="240" fill="url(#gs)"/>
+          <g class="ln">
+            <path class="draw" d="M40 212H280"/>
+            <rect class="draw" x="92" y="112" width="136" height="100"/>
+            <path class="draw" d="M80 114L160 58L240 114"/>
+            <path class="draw ln-thin" d="M92 124H228"/>
+            <circle class="draw" cx="160" cy="170" r="26"/>
+          </g>
+          <path class="cat draw" d="M183 178q24-4 20-30"/>
+          <g>
+            <line class="cota" x1="260" y1="58" x2="260" y2="212" marker-start="url(#ar)" marker-end="url(#ar)"/>
+            <text class="t" x="266" y="140">[h]</text>
+            <text class="t" x="96" y="48">cubierta a dos aguas</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <span class="chip">Datos de ejemplo</span>
+        <h3>Refugio</h3>
+        <p>Caseta cerrada con acceso circular para que los gatos más tímidos tengan un sitio donde esconderse.</p>
+        <div class="ficha">
+          <h3>Ficha técnica · C</h3>
+          <dl>
+            <div class="row"><dt>Estructura</dt><i></i><dd><span class="ph">[material]</span></dd></div>
+            <div class="row"><dt>Acceso</dt><i></i><dd>Hueco circular</dd></div>
+            <div class="row"><dt>Interior</dt><i></i><dd><span class="ph">[acabado]</span></dd></div>
+            <div class="row"><dt>Ubicación</dt><i></i><dd><span class="ph">[sala de la asociación]</span></dd></div>
+          </dl>
+        </div>
+        <div class="foto">Foto de obra pendiente</div>
+      </div>
+    </div>
+    <p style="margin:18px 0 0"><span class="note">cambiar por los rascadores que ha hecho de verdad, con sus fotos</span></p>
+  </section>
+
+  <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>+3,00</b> planta 1 · mantenimiento<i></i></div>
+
+  <section class="phase" id="cuidados" data-fase="04 · Mantenimiento">
+    <div class="phase-head">
+      <span class="phase-num" aria-hidden="true">04</span>
+      <h2>Mantenimiento</h2>
+      <p>Cuidado de gatos y perros a domicilio</p>
+    </div>
+    <div class="presu-wrap">
+      <table class="presu">
+        <caption><span>CAP. 04</span>Cuidados a domicilio</caption>
+        <thead>
+          <tr><th>Código</th><th>Ud</th><th>Partida</th><th style="text-align:right">Precio</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cod">04.01</td><td class="ud">ud</td>
+            <td class="res">Visita a domicilio para gatos<small>Comida, agua, arenero y compañía.</small></td>
+            <td class="precio"><span class="ph">[a consultar]</span></td>
+          </tr>
+          <tr>
+            <td class="cod">04.02</td><td class="ud">h</td>
+            <td class="res">Paseo de perros<small>Recogida en casa y paseo por la zona.</small></td>
+            <td class="precio"><span class="ph">[a consultar]</span></td>
+          </tr>
+          <tr>
+            <td class="cod">04.03</td><td class="ud">día</td>
+            <td class="res">Cuidado durante vacaciones<small>Visitas diarias mientras estás fuera.</small></td>
+            <td class="precio"><span class="ph">[a consultar]</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Total capítulo 04</td><td>según medición</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="presu-notes">
+      <span>Zona de trabajo: <span class="ph">[barrio / ciudad]</span></span>
+      <span class="note">confirmar servicios, zona y si quiere poner precios</span>
+    </div>
+  </section>
+
+  <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>±0,00</b> planta baja · acceso<i></i></div>
+
+  <section class="phase" id="contacto" data-fase="05 · Recepción de obra">
+    <div class="phase-head">
+      <span class="phase-num" aria-hidden="true">05</span>
+      <h2>Recepción de obra</h2>
+      <p>Contacto · cajetín</p>
+    </div>
+    <div class="cajetin">
+      <div class="big">
+        <div><span class="k">Proyectista</span><span class="v"><span class="ph">[Nombre Apellido]</span></span></div>
+        <div><span class="k">Firma</span><span class="firma">[Nombre]</span></div>
+      </div>
+      <div>
+        <span class="k">Correo</span>
+        <div class="mail"><code id="mail">correo@ejemplo.com</code><button class="btn small" id="copy" type="button">Copiar</button><span class="copied" id="copied" aria-live="polite"></span></div>
+      </div>
+      <div><span class="k">Escala</span><span class="v">1 gato : 1 m²</span></div>
+      <div><span class="k">Revisión</span><span class="v">R0 · en obra</span></div>
+      <div><span class="k">Fecha</span><span class="v">2026</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="tape" aria-hidden="true">
+    <div class="tape-track">
+      <span>Fin de obra (por ahora)</span><span>Gracias por la visita</span><span>Cierre la puerta, que se escapa el gato</span><span>Fin de obra (por ahora)</span><span>Gracias por la visita</span><span>Cierre la puerta, que se escapa el gato</span>
+    </div>
+  </div>
+  <div class="wrap foot"><span>Planos para Peludos · R0</span><span>Hecho a mano con HTML, CSS y JS</span></div>
+</footer>
+
+<div class="avance" aria-hidden="true">
+  <div class="avance-top"><span>Avance de obra</span><b id="pct">0%</b></div>
+  <div class="avance-bar"><span id="bar"></span></div>
+  <div class="avance-fase" id="fase">Portada · cubierta</div>
+</div>
+
+<div class="xh" id="xh" aria-hidden="true"><div class="h"></div><div class="v"></div><div class="lbl"></div></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
