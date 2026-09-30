@@ -76,6 +76,23 @@
     });
   });
 
+  /* proyecto real: fotos descargables (el bloque solo aparece si las fotos existen) */
+  document.querySelectorAll('.real').forEach(function(box){
+    var cont=box.querySelector('.real-fotos');
+    box.getAttribute('data-fotos').split(',').map(function(s){return s.trim();}).filter(Boolean).forEach(function(src,n){
+      var img=new Image();
+      img.onload=function(){
+        var name=src.split('/').pop();
+        var item=document.createElement('div'); item.className='real-foto'; item.style.order=n;
+        item.innerHTML='<a class="ver" href="'+src+'" target="_blank" rel="noopener"><img alt="Foto '+(n+1)+' del proyecto real" loading="lazy"></a>'+
+                       '<a class="bajar" href="'+src+'" download="'+name+'">Descargar</a>';
+        item.querySelector('img').src=src;
+        cont.appendChild(item); box.hidden=false;
+      };
+      img.src=src;
+    });
+  });
+
   /* avance de obra */
   var secs=[].slice.call(document.querySelectorAll('section.phase')), links=[].slice.call(document.querySelectorAll('.nav a.link'));
   var pct=document.getElementById('pct'), bar=document.getElementById('bar'), fase=document.getElementById('fase');
