@@ -311,7 +311,7 @@ svg .fill-obra{fill:var(--obra)}
 @media (hover:hover) and (pointer:fine) and (min-width:900px){ .xh.on{display:block} }
 
 footer.site{margin-top:56px}
-.foot{display:flex;justify-content:center;padding-block:24px}
+.foot{display:flex;justify-content:flex-start;padding-block:24px}
 .logo-autora{height:72px;width:auto}
 
 @media (max-width:900px){
