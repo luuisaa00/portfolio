@@ -15,6 +15,7 @@
     els.forEach(function(el,n){
       var len; try{ len = el.getTotalLength(); }catch(e){ return; }
       if(!len) return;
+      if(el.getAnimations) el.getAnimations().forEach(function(a){ a.cancel(); });
       var dash = el.getAttribute('stroke-dasharray');
       el.style.strokeDasharray = len+' '+len;
       el.animate([{strokeDashoffset:len},{strokeDashoffset:0}],{duration:700,delay:(base||0)+n*45,easing:'ease-out',fill:'backwards'})
@@ -59,20 +60,18 @@
     cb.setAttribute('aria-pressed',String(!off)); cb.textContent='Cotas: '+(off?'no':'sí');
   });
 
-  /* pestañas de modelos */
-  var tabs=[].slice.call(document.querySelectorAll('.tab'));
-  function select(tab){
-    tabs.forEach(function(t){
-      var on=t===tab; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
-    });
-    draw(document.getElementById(tab.getAttribute('aria-controls')),0);
+  /* dibujar cada modelo al llegar a él */
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ draw(en.target,0); io.unobserve(en.target); } });
+    },{threshold:.35});
+    document.querySelectorAll('.modelo-bloque .plan-frame').forEach(function(el){ io.observe(el); });
   }
-  tabs.forEach(function(t,n){
-    t.addEventListener('click',function(){select(t);});
-    t.addEventListener('keydown',function(e){
-      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!d) return;
-      var nx=tabs[(n+d+tabs.length)%tabs.length]; nx.focus(); select(nx);
+
+  /* al pulsar el nombre de un modelo, se vuelve a dibujar su plano */
+  document.querySelectorAll('.modelo-titulo .replay').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      draw(btn.closest('.modelo-bloque').querySelector('.plan-frame'),0);
     });
   });
 

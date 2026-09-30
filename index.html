@@ -196,13 +196,9 @@
       <p>Rascadores y plataformas · E 1:20</p>
     </div>
 
-    <div class="tabs" role="tablist" aria-label="Modelos">
-      <button class="tab" role="tab" id="tab-a" aria-controls="m-a" aria-selected="true"><span>A</span>Torre de tres alturas</button>
-      <button class="tab" role="tab" id="tab-b" aria-controls="m-b" aria-selected="false" tabindex="-1"><span>B</span>Plataformas de pared</button>
-      <button class="tab" role="tab" id="tab-c" aria-controls="m-c" aria-selected="false" tabindex="-1"><span>C</span>Refugio</button>
-    </div>
-
-    <div class="modelo" id="m-a" role="tabpanel" aria-labelledby="tab-a">
+    <article class="modelo-bloque" id="m-a" aria-labelledby="t-a">
+      <h3 class="modelo-titulo" id="t-a"><button type="button" class="replay" title="Volver a dibujar"><span>A</span>Torre de tres alturas<svg class="replay-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg></button></h3>
+      <div class="modelo">
       <div class="plan-frame">
         <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de torre de tres alturas">
           <rect width="320" height="240" fill="url(#gs)"/>
@@ -225,7 +221,6 @@
       </div>
       <div>
         <span class="chip">Datos de ejemplo</span>
-        <h3>Torre de tres alturas</h3>
         <p>Poste central forrado de sisal con plataformas a distintas alturas para que varios gatos suban a la vez.</p>
         <div class="ficha">
           <h3>Ficha técnica · A</h3>
@@ -241,9 +236,12 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </article>
 
-    <div class="modelo" id="m-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+    <article class="modelo-bloque" id="m-b" aria-labelledby="t-b">
+      <h3 class="modelo-titulo" id="t-b"><button type="button" class="replay" title="Volver a dibujar"><span>B</span>Plataformas de pared<svg class="replay-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg></button></h3>
+      <div class="modelo">
       <div class="plan-frame">
         <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de plataformas escalonadas en pared">
           <rect width="320" height="240" fill="url(#gs)"/>
@@ -264,7 +262,6 @@
       </div>
       <div>
         <span class="chip">Datos de ejemplo</span>
-        <h3>Plataformas de pared</h3>
         <p>Escalones anclados a la pared que forman un recorrido en altura sin ocupar suelo.</p>
         <div class="ficha">
           <h3>Ficha técnica · B</h3>
@@ -280,9 +277,12 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </article>
 
-    <div class="modelo" id="m-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+    <article class="modelo-bloque" id="m-c" aria-labelledby="t-c">
+      <h3 class="modelo-titulo" id="t-c"><button type="button" class="replay" title="Volver a dibujar"><span>C</span>Refugio<svg class="replay-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg></button></h3>
+      <div class="modelo">
       <div class="plan-frame">
         <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de refugio con cubierta a dos aguas">
           <rect width="320" height="240" fill="url(#gs)"/>
@@ -303,7 +303,6 @@
       </div>
       <div>
         <span class="chip">Datos de ejemplo</span>
-        <h3>Refugio</h3>
         <p>Caseta cerrada con acceso circular para que los gatos más tímidos tengan un sitio donde esconderse.</p>
         <div class="ficha">
           <h3>Ficha técnica · C</h3>
@@ -319,7 +318,53 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </article>
+    <article class="modelo-bloque" id="m-d" aria-labelledby="t-d">
+      <h3 class="modelo-titulo" id="t-d"><button type="button" class="replay" title="Volver a dibujar"><span>D</span>Comederos de madera<svg class="replay-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"/></svg></button></h3>
+      <div class="modelo">
+      <div class="plan-frame">
+        <svg viewBox="0 0 320 240" role="img" aria-label="Alzado de comedero de madera con dos cuencos">
+          <rect width="320" height="240" fill="url(#gs)"/>
+          <g class="ln">
+            <path class="draw" d="M40 212H280"/>
+            <rect class="draw" x="70" y="120" width="180" height="12"/>
+            <rect class="draw" x="80" y="132" width="12" height="80"/>
+            <rect class="draw" x="228" y="132" width="12" height="80"/>
+            <path class="draw ln-thin" d="M92 196H228"/>
+            <path class="draw" d="M98 120L104 138H146L152 120"/>
+            <path class="draw" d="M168 120L174 138H216L222 120"/>
+            <path class="draw ln-thin" d="M98 114H152M168 114H222"/>
+          </g>
+          <path class="cat draw" d="M104 112C104 98 126 98 126 112M108 102l2-8 5 6M120 100l4-6 1 8"/>
+          <g>
+            <line class="cota" x1="266" y1="120" x2="266" y2="212" marker-start="url(#ar)" marker-end="url(#ar)"/>
+            <line class="cota" x1="70" y1="226" x2="250" y2="226" marker-start="url(#ar)" marker-end="url(#ar)"/>
+            <text class="t" x="272" y="170">[h]</text>
+            <text class="t" x="152" y="222">[a]</text>
+            <text class="t" x="170" y="104">cuencos encastrados</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <span class="chip">Datos de ejemplo</span>
+        <p>Soporte de madera elevado con huecos para los cuencos de comida y agua.</p>
+        <div class="ficha">
+          <h3>Ficha técnica · D</h3>
+          <dl>
+            <div class="row"><dt>Madera</dt><i></i><dd><span class="ph">[material]</span></dd></div>
+            <div class="row"><dt>Cuencos</dt><i></i><dd><span class="ph">[nº de cuencos]</span></dd></div>
+            <div class="row"><dt>Acabado</dt><i></i><dd><span class="ph">[acabado]</span></dd></div>
+            <div class="row"><dt>Ubicación</dt><i></i><dd><span class="ph">[sala de la asociación]</span></dd></div>
+          </dl>
+          <div class="real" data-fotos="img/rascadores/d-1.jpg, img/rascadores/d-2.jpg, img/rascadores/d-3.jpg" hidden>
+            <h4>Proyecto real</h4>
+            <div class="real-fotos"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </article>
   </section>
 
   <div class="level"><svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 1H15L8 11Z"/></svg><b>+3,00</b> planta 1 · mantenimiento<i></i></div>
