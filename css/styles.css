@@ -312,7 +312,7 @@ svg .fill-obra{fill:var(--obra)}
 
 footer.site{margin-top:56px}
 .foot{display:flex;justify-content:center;padding-block:24px}
-.logo-autora{height:48px;width:auto}
+.logo-autora{height:72px;width:auto}
 
 @media (max-width:900px){
   .hero,.two,.modelo{grid-template-columns:minmax(0,1fr);gap:32px}
